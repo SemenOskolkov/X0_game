@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "x0-game"
+version = "0.1.0"
+description = ""
+authors = ["Semen Oskolkov <oskolkovsemen@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "x0_game"}]
+
+[tool.poetry.scripts]
+play = 'x0_game.X0_game:main'
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
